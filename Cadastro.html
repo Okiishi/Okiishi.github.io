@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="Cadastro.css"  />
+</head>
+
+<body>
+  <div class="cadastro">
+    <h1>Cadastro</h1>
+    <form action="Login.html" method="link">
+      <label for="username">Nome Completo:</label><br />
+      <input type="text" id="username" name="username" required /><br />
+      <label for="age">Idade:</label><br />
+      <input type="number" min="0" max="120" id="age" name="age" required /><br />
+      <label for="email">E-mail:</label><br />
+      <input type="email" id="email" name="email" required /><br />
+      <label for="pwd">Senha:</label><br />
+      <input type="password" id="pwd" name="pwd" required /> <br />
+      
+      <!--
+      <label for="pwd2">Confirme sua senha:</label><br />
+      <input type="password" id="pwd2" name="pwd2" required /> <br />
+      !-->
+
+      <label for="Motivo">Qual o seu maior motivo para reciclar ?</label><br />
+      <select name="Motivo" id="Motivo">
+        <option value="Selecione alguma opção">Selecione alguma opção</option>
+        <option value="Conservação do solo">Conservação do solo</option>
+        <option value="Conservação dos recursos naturais">
+          Conservação dos recursos naturais
+        </option>
+        <option value="Economia de energia">Economia de energia</option>
+        <option value="Estimular Economia Circular">
+          Estimular Economia Circular
+        </option>
+        <option value="Preservação da biodiversidade">
+          Preservação da biodiversidade
+        </option>
+        <option value="Redução da soluição">Redução da poluição</option>
+        <option value="Outro">Outro</option>
+      </select>
+      <br />
+      <label for="outro">Caso tenha selecionado OUTRO, nos diga seu motivo:</label><br />
+      <textarea id="outro" name="outro" rows="5" cols="30"> </textarea><br />
+      <br />
+      <input type="submit" value="Enviar" class="submit"/>
+    </form>
+    
+  </div>
+</body>
+
+</html>
